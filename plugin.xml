@@ -1,0 +1,16 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-keypress"
+        version="0.0.1">
+    <name>KeyPressPlugin</name>
+    <js-module src="www/keypress.js" name="KeyPress">
+        <clobbers target="cordova.plugins.KeyPress" />
+    </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KeyPress">
+                <param name="android-package" value="org.apache.cordova.keypress.KeyPressPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/KeyPressPlugin.java" target-dir="src/org/apache/cordova/keypress" />
+    </platform>
+</plugin>
