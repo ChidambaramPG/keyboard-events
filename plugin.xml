@@ -2,6 +2,11 @@
         id="cordova-plugin-keypress"
         version="0.0.1">
     <name>KeyPressPlugin</name>
+    <description>
+        A plugin to handle key press events in Cordova.
+    </description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,plugin,key,press</keywords>
     <js-module src="www/keypress.js" name="KeyPress">
         <clobbers target="cordova.plugins.KeyPress" />
     </js-module>
