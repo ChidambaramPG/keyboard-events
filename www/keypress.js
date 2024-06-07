@@ -7,3 +7,5 @@ var KeyPress = {
 };
 
 module.exports = KeyPress;
+window.cordova.plugins = window.cordova.plugins || {};
+window.cordova.plugins.KeyPress = KeyPress;
